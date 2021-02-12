@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class ScriptControl {
 
+    // 모든 스크립트 갯수 얻기
     public static int getScriptAmount(String pluginName) {
         if(Script.main.getDataFolder().listFiles() == null) return 0;
 
@@ -33,6 +34,7 @@ public class ScriptControl {
         return f.listFiles().length;
     }
 
+    // 모든 스크립트의 경로 얻기
     public static ArrayList<File> getAllScript() {
         File f = new File(Script.main.getDataFolder()+"");
         ArrayList<File> result = new ArrayList<>();
@@ -46,6 +48,7 @@ public class ScriptControl {
         return result;
     }
 
+    // 스크립트 불러오기
     public static boolean importScript(String pluginName, String scriptName) {
         File targetFile = null;
 

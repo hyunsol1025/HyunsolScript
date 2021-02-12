@@ -5,3 +5,4 @@ api-version: 1.16
 authors: [ Hyunsol ]
 commands:
   script-test:
+  hyunsol-script:

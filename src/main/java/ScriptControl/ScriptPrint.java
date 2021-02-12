@@ -27,6 +27,7 @@ public class ScriptPrint {
 
     public String subtitle_type = "chat";
 
+    // 스크립트 규칙식별 및 규칙 인자값 얻기
     private String[] getScriptOption(String option, String e) {
 
         // 해당 옵션이 맞는지 확인
@@ -38,7 +39,6 @@ public class ScriptPrint {
 
         return null;
     }
-
 
     // 스크립트 시작
     public void scriptStart(String scriptName, ArrayList<Player> targetPlayer) {
