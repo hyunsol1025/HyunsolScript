@@ -9,6 +9,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
+import ScriptControl.GUI;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -41,7 +42,8 @@ public final class Script extends JavaPlugin {
         Player p = (Player)sender;
 
         if(label.contains("hyunsol-script")) {
-
+            GUI scGUI = new GUI();
+            scGUI.GUI_ScriptList(p);
         }
 
         else if(label.contains("script-test")){
