@@ -1,0 +1,7 @@
+name: Script
+version: ${project.version}
+main: script.script.Script
+api-version: 1.16
+authors: [ Hyunsol ]
+commands:
+  script-test:
